@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client";
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../components/ui/navbar-menu";
@@ -69,3 +70,29 @@ function Navbar({ className }: { className?: string }) {
     </div>
   );
 }
+=======
+import Link from "next/link";
+
+const Navbar = () => {
+  return (
+    <nav className="bg-gray-800 p-4">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="text-white font-bold text-lg">MyWebsite</div>
+        <div>
+          <Link href="/" className="text-gray-300 hover:text-white px-3">
+            Home
+          </Link>
+          <Link href="/about" className="text-gray-300 hover:text-white px-3">
+            About
+          </Link>
+          <Link href="/contact" className="text-gray-300 hover:text-white px-3">
+            Contact
+          </Link>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
+>>>>>>> fc0e86f0d21ca784de76c8f4b171dccee5526836
