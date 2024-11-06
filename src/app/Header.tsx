@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="fixed w-screen bg-white p-6 z-40">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-4xl text-black font-bold">basement</div>
+        <div className="text-4xl text-black font-bold">basement co.</div>
         <div>
           <Link
             href="/"
@@ -19,17 +19,17 @@ const Navbar = () => {
             Profile & Kontak
           </Link>
           <Link
-            href="/services"
+            href="/pricing"
             className="text-md text-black hover:text-gray-500 px-3"
           >
-            Layanan
+            Pricing
           </Link>
-          <Link
+          {/* <Link
             href="/testimonials"
             className="text-md text-black hover:text-gray-500 px-3"
           >
             Klient & Testimonial
-          </Link>
+          </Link> */}
         </div>
       </div>
     </nav>
