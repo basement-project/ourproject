@@ -12,8 +12,8 @@ const hero = () => {
       }}
     >
       <div className="flex flex-col justify-center ">
-        <h1 className="text-[101px] text-yellow-400 font-bold drop-shadow-[30px_20px_40px_black]">
-          Jasa Pembuatan Website
+        <h1 className="text-[90px] text-yellow-400 font-bold drop-shadow-[30px_20px_40px_black] flex flex-col">
+          Jasa Pembuatan<span>Website</span> 
         </h1>
         <div className="flex justify-center">
           <Button className="mt-20 flex items-center text-md" variant="outline">
