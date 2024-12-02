@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -32,7 +32,7 @@ const Navbar = () => {
         <div
           className={`${
             menuOpen ? "block" : "hidden"
-          } absolute sm:static top-16 sm:top-auto left-0 sm:left-auto w-full sm:w-auto bg-white sm:bg-transparent shadow-md sm:shadow-none p-6 sm:p-0 flex flex-col sm:flex-row items-center sm:items-center`}
+          } absolute sm:static top-16 sm:top-auto left-0 sm:left-auto w-full sm:w-auto bg-white sm:bg-transparent shadow-md sm:shadow-none p-6 sm:p-0 flex flex-col sm:flex-row items-center sm:items-center sm:block`}
         >
           <Link
             href="/"
@@ -52,7 +52,7 @@ const Navbar = () => {
           >
             Pricing
           </Link>
-          {/* Tambahkan link lainnya di sini jika diperlukan */}
+          {/* Add other links if needed */}
         </div>
       </div>
     </nav>
