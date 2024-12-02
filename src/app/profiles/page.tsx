@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const AboutUs = () => {
@@ -10,11 +11,13 @@ const AboutUs = () => {
 
         <div className="flex justify-center items-center gap-8 mb-8">
           {/* Logo Perusahaan */}
-          <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg">
-            <img
+          <div className="w-48 h-full rounded-full overflow-hidden shadow-lg">
+            <Image
               src="/images/Daffa5.jpeg" // Ganti dengan logo perusahaan
               alt="Company Logo"
               className="w-full h-full object-cover"
+              width={200}
+              height={200}
             />
           </div>
 

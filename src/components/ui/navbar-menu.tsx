@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import Link, { LinkProps } from "next/link";
 import Image from "next/image";
 
 const transition = {
@@ -12,6 +12,10 @@ const transition = {
   restDelta: 0.001,
   restSpeed: 0.001,
 };
+
+interface HoveredLinkProps extends LinkProps {
+  children: React.ReactNode;
+}
 
 export const MenuItem = ({
   setActive,
@@ -109,7 +113,7 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+export const HoveredLink = ({ children, ...rest }: HoveredLinkProps) => {
   return (
     <Link
       {...rest}
