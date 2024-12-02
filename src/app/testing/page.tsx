@@ -1,11 +1,10 @@
 import React from "react";
-import Hero from "./_component/Hero";
-
+import Card from "./_components/Card";
 
 const page = () => {
   return (
-    <div>
-      <Hero />
+    <div className="pt-24">
+      <Card />
     </div>
   );
 };
